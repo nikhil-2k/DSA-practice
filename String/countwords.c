@@ -1,13 +1,13 @@
 #include<stdio.h>
 int main()
 {
-  char A[]="How are you";
-  int i,word=1;
-  for (i<0;A[i]!=0;i++)
+  char A[]="how are you";
+  int word=1;
+  for (int i=0;A[i]!='\0';i++)
   {
-      if (A[i]=='\0' )
-      word++;
+      if (A[i]==' ' )
+        word++;
   }
-  printf("%s",word);
+  printf("%d",word);
   return 0;
 }
