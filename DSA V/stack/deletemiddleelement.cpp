@@ -13,7 +13,7 @@ void solve(stack<int> input_stack, int count, int size)
     solve(input_stack, count + 1, size);
     input_stack.push(num);
 }
-void deleteMiddle(stack<int> &input_stack, int n)
+void deleteMiddle(stack<int> input_stack, int n)
 {
     int count = 0;
     solve(input_stack, count, n);
