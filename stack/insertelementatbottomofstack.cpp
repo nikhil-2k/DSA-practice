@@ -13,9 +13,9 @@ void solve(stack<int> s, int x)
     //Recursive call
     solve(s, x);
     s.push(num);
-    stack<int> pushAtBottom(stack<int>MyStack, int x);
-    {
-        solve(MyStack, x);
-        return MyStack ;
-    }
+}
+stack<int> pushAtBottom(stack<int> &mystack, int x)
+{
+    solve(mystack, x);
+    return mystack;
 }
